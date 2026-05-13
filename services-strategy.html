@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Automation Services Portfolio | NetKode</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f6f7fb
+    }
+
+    .banner-section {
+      background: linear-gradient(180deg, rgba(102, 126, 234, .92), rgba(0, 0, 0, .85)), url(https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1600) center/cover;
+      padding: 180px 0 130px;
+      text-align: center;
+      color: #fff
+    }
+
+    .banner-section h1 {
+      font-size: 3rem;
+      font-weight: 700
+    }
+
+    .content-wrapper {
+      padding: 70px 0
+    }
+
+    .sticky-sidebar {
+      position: sticky;
+      top: 110px
+    }
+
+    .toc-card {
+      background: #fff;
+      padding: 25px;
+      border-radius: 14px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, .08)
+    }
+
+    .toc-card a {
+      display: block;
+      padding: 12px 14px;
+      margin-bottom: 8px;
+      font-weight: 600;
+      border-radius: 8px;
+      color: #555
+    }
+
+    .toc-card a.active,
+    .toc-card a:hover {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: #fff
+    }
+
+    .service-section {
+      background: #fff;
+      padding: 45px;
+      border-radius: 16px;
+      margin-bottom: 45px;
+      box-shadow: 0 15px 45px rgba(0, 0, 0, .08);
+      scroll-margin-top: 120px
+    }
+
+    .service-image {
+      width: 100%;
+      border-radius: 14px;
+      margin: 25px 0
+    }
+
+    .feature-list,
+    .benefits {
+      list-style: none;
+      padding: 0
+    }
+
+    .feature-list li {
+      padding: 10px 0
+    }
+
+    .feature-list i {
+      color: #667eea;
+      margin-right: 10px
+    }
+
+    .benefits {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px
+    }
+
+    .benefits li {
+      background: #f2f4f8;
+      padding: 12px;
+      border-radius: 8px
+    }
+
+    .info-box {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: #fff;
+      padding: 28px;
+      border-radius: 14px;
+      margin-top: 30px
+    }
+
+    @media(max-width:768px) {
+      .banner-section {
+        padding: 120px 0 90px
+      }
+
+      .banner-section h1 {
+        font-size: 2rem
+      }
+
+      .benefits {
+        grid-template-columns: 1fr
+      }
+
+      .service-section {
+        padding: 30px
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <header id="header">
+    <nav class="container">
+      <a href="index.htm">
+        <div class="logo">Net<span>Kode</span></div>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.htm#home">Home</a></li>
+        <li><a href="index.htm#about">About</a></li>
+        <!-- <li><a href="#services">Services</a></li>
+                <li><a href="#solutions">Solutions</a></li>
+                <li><a href="#technologies">Technologies</a></li> -->
+
+
+        <!-- SERVICES DROPDOWN -->
+        <li class="has-dropdown">
+          <a href="services-strategy.html">
+            Services <i class="bi bi-chevron-down"></i>
+          </a>
+          <ul class="dropdown">
+            <li><a href="services-strategy.html#consulting">Consulting & Assessment</a></li>
+            <li><a href="services-strategy.html#iac">IaC Development & CI/CD</a></li>
+            <li><a href="services-strategy.html#nso">Cisco NSO Service Packs</a></li>
+            <li><a href="services-strategy.html#api">API Automation Frameworks</a></li>
+            <li><a href="services-strategy.html#terraform">Terraform Templates</a></li>
+            <li><a href="services-strategy.html#managed">Managed Automation</a></li>
+          </ul>
+        </li>
+
+        <!-- SOLUTIONS DROPDOWN -->
+        <li class="has-dropdown">
+          <a href="solutions.html">
+            Solutions <i class="bi bi-chevron-down"></i>
+          </a>
+          <ul class="dropdown">
+            <li><a href="solutions.html#enterprise">Enterprise Networking</a></li>
+            <li><a href="solutions.html#smb">Small Business Networks</a></li>
+            <li><a href="solutions.html#cloud">Cloud Migration</a></li>
+            <li><a href="solutions.html#remote">Secure Remote Access</a></li>
+            <li><a href="solutions.html#iot">IoT Networking</a></li>
+          </ul>
+        </li>
+
+        <!-- TECHNOLOGIES DROPDOWN -->
+        <li class="has-dropdown">
+          <a href="technologies.html">
+            Technologies <i class="bi bi-chevron-down"></i>
+          </a>
+          <ul class="dropdown">
+            <li><a href="technologies.html#cisco">Cisco</a></li>
+            <li><a href="technologies.html#aws">AWS</a></li>
+            <li><a href="technologies.html#azure">Azure</a></li>
+            <li><a href="technologies.html#linux">Linux</a></li>
+            <li><a href="technologies.html#sdwan">SD-WAN</a></li>
+          </ul>
+        </li>
+        <li><a href="index.htm#testimonials">Testimonials</a></li>
+        <li><a href="index.htm#blog">Blog</a></li>
+        <li><a href="index.htm#contact">Contact</a></li>
+
+
+
+
+
+
+
+
+      </ul>
+      <div class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <section class="banner-section">
+    <div class="container">
+      <h1>Automation Services Portfolio</h1>
+      <p>Consult • Build • Automate • Operate</p>
+    </div>
+  </section>
+
+  <section class="content-wrapper">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-3">
+          <div class="sticky-sidebar">
+            <div class="toc-card">
+              <a href="#consulting" class="active">Consulting & Assessment</a>
+              <a href="#iac">IaC Development & CI/CD</a>
+              <a href="#nso">Cisco NSO Service Packs</a>
+              <a href="#api">API Automation Frameworks</a>
+              <a href="#terraform">Terraform Templates</a>
+              <a href="#managed">Managed Automation</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-9">
+
+          <div id="consulting" class="service-section">
+            <h2>Consulting & Assessment</h2>
+            <img class="service-image" src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200">
+
+            <p>
+              We evaluate automation readiness, infrastructure maturity, and operational models to design practical,
+              actionable Infrastructure-as-Code and automation roadmaps tailored to your organization.
+            </p>
+
+            <p>
+              Our consultants work closely with engineering, operations, and leadership teams to understand existing
+              processes, tooling, and deployment practices. This collaborative engagement helps uncover inefficiencies,
+              manual dependencies, and opportunities for improvement.
+            </p>
+
+            <p>
+              Through structured workshops, architectural reviews, and technical assessments, we identify quick wins
+              as well as long-term transformation strategies that improve reliability, scalability, and delivery speed.
+            </p>
+
+            <p>
+              The result is a clear automation strategy that aligns technology initiatives with business objectives,
+              reduces operational risk, and accelerates digital transformation.
+            </p>
+
+            <ul class="feature-list">
+              <li><i class="bi bi-check-circle-fill"></i> Automation readiness assessment</li>
+              <li><i class="bi bi-check-circle-fill"></i> IaC and platform strategy</li>
+              <li><i class="bi bi-check-circle-fill"></i> Architecture reviews</li>
+            </ul>
+
+            <div class="info-box">
+              <h4>Clarity Before Execution</h4>
+              <p>
+                We provide structured guidance and technical direction so teams move forward with confidence,
+                clarity, and measurable outcomes.
+              </p>
+            </div>
+          </div>
+
+
+          <div id="iac" class="service-section">
+            <h2>IaC Development & CI/CD</h2>
+            <img class="service-image" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200">
+
+            <p>
+              We design and implement Infrastructure-as-Code pipelines using Terraform and Ansible to automate
+              provisioning across data centers, cloud platforms, and hybrid environments.
+            </p>
+
+            <p>
+              GitOps workflows enable version-controlled changes, peer reviews, and rollback capabilities, ensuring
+              infrastructure updates are predictable and traceable.
+            </p>
+
+            <p>
+              CI/CD pipelines integrate automated testing, validation, and deployment, reducing human error and
+              accelerating release cycles while maintaining governance.
+            </p>
+
+            <p>
+              This approach delivers consistent environments from development to production and enables rapid
+              scaling as business needs evolve.
+            </p>
+
+            <ul class="benefits">
+              <li>Reusable IaC modules</li>
+              <li>Git-based change control</li>
+              <li>Automated testing</li>
+              <li>Consistent deployments</li>
+            </ul>
+          </div>
+
+
+          <div id="nso" class="service-section">
+            <h2>Cisco NSO Service Packs</h2>
+            <img class="service-image" src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200">
+
+            <p>
+              We build custom Cisco NSO service packs using YANG models to standardize L2/L3, VPN, ACL, and BGP services
+              across multi-vendor environments.
+            </p>
+
+            <p>
+              By abstracting device-level complexity, service packs allow engineers to deploy services using
+              intent-based
+              workflows rather than manual CLI configuration.
+            </p>
+
+            <p>
+              This dramatically reduces provisioning time, improves consistency, and simplifies lifecycle management
+              from design through retirement.
+            </p>
+
+            <ul class="benefits">
+              <li>Custom YANG models</li>
+              <li>Service automation</li>
+              <li>Multi-vendor support</li>
+              <li>Fast provisioning</li>
+            </ul>
+          </div>
+
+
+          <div id="api" class="service-section">
+            <h2>API Automation Frameworks</h2>
+            <img class="service-image" src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=1200">
+
+            <p>
+              We design robust API automation frameworks using REST and gRPC to connect applications, platforms,
+              and network systems.
+            </p>
+
+            <p>
+              Postman collections and automated test harnesses ensure API reliability while enabling continuous
+              integration and delivery.
+            </p>
+
+            <p>
+              Event-driven workflows enable real-time automation across provisioning, monitoring, and remediation
+              processes.
+            </p>
+
+            <p>
+              Clear documentation and governance practices help development teams adopt APIs quickly and safely.
+            </p>
+
+            <ul class="benefits">
+              <li>Developer APIs</li>
+              <li>Automated testing</li>
+              <li>Event workflows</li>
+              <li>Documentation</li>
+            </ul>
+          </div>
+
+
+          <div id="terraform" class="service-section">
+            <h2>Terraform Templates</h2>
+            <img class="service-image" src="https://placehold.co/1200x800?text=Terraform+Network+Automation">
+
+            <p>
+              Our Terraform templates provide modular, reusable building blocks for routers, switches, firewalls,
+              and network controllers.
+            </p>
+
+            <p>
+              Templates encapsulate best practices, enabling teams to deploy infrastructure faster while maintaining
+              standards across environments.
+            </p>
+
+            <p>
+              This modular approach simplifies scaling, accelerates onboarding, and ensures consistency between
+              development, staging, and production deployments.
+            </p>
+
+            <ul class="benefits">
+              <li>Standardized deployments</li>
+              <li>Reusable modules</li>
+              <li>Faster provisioning</li>
+              <li>Environment consistency</li>
+            </ul>
+          </div>
+
+
+          <div id="managed" class="service-section">
+            <h2>Managed Automation</h2>
+            <img class="service-image" src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1200">
+
+            <p>
+              We operate and continuously enhance your automation platforms under defined SLAs and operational
+              best practices.
+            </p>
+
+            <p>
+              Our managed services include monitoring, performance optimization, security updates, and platform
+              maintenance to keep systems running reliably.
+            </p>
+
+            <p>
+              By handling day-to-day operations, we free internal teams to focus on innovation, strategic initiatives,
+              and business growth.
+            </p>
+
+            <ul class="benefits">
+              <li>SLA-backed operations</li>
+              <li>Continuous improvement</li>
+              <li>Platform monitoring</li>
+              <li>Reduced operational load</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const links = document.querySelectorAll('.toc-card a');
+    const sections = document.querySelectorAll('.service-section');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(sec => {
+        if (window.scrollY >= sec.offsetTop - 150) { current = sec.id; }
+      });
+      links.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') == '#' + current) { link.classList.add('active'); }
+      });
+    });
+  </script>
+
+</body>
+
+</html>

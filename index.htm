@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetKode - Powering the Future of Networking</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- SCROLL INDICATOR / SCROLL TO TOP -->
+    <div id="scrollIndicator">
+        <svg class="progress-ring" width="52" height="52">
+            <circle class="progress-ring__circle" stroke="#1e88e5" stroke-width="4" fill="transparent" r="22" cx="26"
+                cy="26" />
+        </svg>
+
+        <button id="scrollTopBtn" aria-label="Scroll to top">
+            <i class="bi bi-arrow-up-short"></i>
+        </button>
+    </div>
+
+
+
+    <!-- HEADER / NAVBAR -->
+    <header id="header">
+        <nav class="container">
+            <a href="#">
+                <div class="logo">Net<span>Kode</span></div>
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <!-- <li><a href="#services">Services</a></li>
+                <li><a href="#solutions">Solutions</a></li>
+                <li><a href="#technologies">Technologies</a></li> -->
+
+
+                <!-- SERVICES DROPDOWN -->
+                <li class="has-dropdown">
+                    <a href="#services">
+                        Services <i class="bi bi-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown">
+                        <li><a href="services-strategy.html#consulting">Consulting & Assessment</a></li>
+                        <li><a href="services-strategy.html#iac">IaC Development & CI/CD</a></li>
+                        <li><a href="services-strategy.html#nso">Cisco NSO Service Packs</a></li>
+                        <li><a href="services-strategy.html#api">API Automation Frameworks</a></li>
+                        <li><a href="services-strategy.html#terraform">Terraform Templates</a></li>
+                        <li><a href="services-strategy.html#managed">Managed Automation</a></li>
+                    </ul>
+                </li>
+
+                <!-- SOLUTIONS DROPDOWN -->
+                <li class="has-dropdown">
+                    <a href="#solutions">
+                        Solutions <i class="bi bi-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown">
+                        <li><a href="solutions.html#enterprise">Enterprise Networking</a></li>
+                        <li><a href="solutions.html#smb">Small Business Networks</a></li>
+                        <li><a href="solutions.html#cloud">Cloud Migration</a></li>
+                        <li><a href="solutions.html#remote">Secure Remote Access</a></li>
+                        <li><a href="solutions.html#iot">IoT Networking</a></li>
+                    </ul>
+                </li>
+
+                <!-- TECHNOLOGIES DROPDOWN -->
+                <li class="has-dropdown">
+                    <a href="#technologies">
+                        Technologies <i class="bi bi-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown">
+                        <li><a href="technologies.html">Cisco</a></li>
+                        <li><a href="#technologies">AWS</a></li>
+                        <li><a href="#technologies">Azure</a></li>
+                        <li><a href="#technologies">Linux</a></li>
+                        <li><a href="#technologies">SD-WAN</a></li>
+                    </ul>
+                </li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+
+
+
+
+
+
+
+            </ul>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <!-- <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Seamless <span>Network Integration</span> for Modern Enterprises</h1>
+            <p><b>Design. Automate. Secure. Integrate.</b> We unify multi-vendor networks, cloud fabrics, and edge
+                systems into a single, programmable infrastructure that accelerates delivery and reduces operational
+                risk.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Get Started</a>
+                <a href="#contact" class="btn btn-secondary">Contact Us</a>
+            </div>
+        </div>
+    </section> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+
+        <!-- Animated Gradient Overlay -->
+        <div class="hero-overlay"></div>
+
+        <!-- Floating Particles -->
+        <div class="hero-particles"></div>
+
+        <!-- CONTENT -->
+        <div class="hero-content">
+            <h1>
+                Seamless <span class="highlight">Network Integration</span><br>
+                for <span class="typing"></span>
+            </h1>
+
+            <p>
+                <b>Design. Automate. Secure. Integrate.</b><br>
+                We unify multi-vendor networks, cloud fabrics, and edge systems
+                into a single programmable infrastructure.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary glow">Get Started</a>
+                <a href="#services" class="btn btn-secondary">Explore Services</a>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-down">
+            <span></span>
+        </div>
+
+    </section>
+
+
+
+
+    <!-- ABOUT SECTION -->
+    <section class="about reveal" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Leading the Way in Network Innovation</h2>
+                    <p>With over 15 years of experience, NetKode has been at the forefront of networking technology,
+                        delivering enterprise-grade solutions to businesses of all sizes.</p>
+                    <p>Our mission is to empower organizations with robust, secure, and scalable network infrastructure
+                        that drives digital transformation and business growth.</p>
+                    <p>We combine cutting-edge technology with deep industry expertise to provide comprehensive
+                        networking solutions that meet the evolving needs of modern enterprises.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800"
+                        alt="Network Technology">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="services reveal" id="services">
+        <div class="container">
+            <h2 class="section-title">Our Network Integration Services</h2>
+            <p class="section-subtitle">
+                Designing, automating, and securing intelligent networks for modern enterprises
+            </p>
+
+            <div class="services-grid">
+
+                <!-- Network Architecture & Design -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="bi bi-diagram-3"></i>
+                    </div>
+                    <h3>Network Architecture & Design</h3>
+                    <p>
+                        Business-aligned network architectures built for campus, data center,
+                        cloud, and edge environments with scalability, resiliency, and intent-based design.
+                    </p>
+                </div>
+
+                <!-- SDN & Intent-Based Networking -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="bi bi-bezier2"></i>
+                    </div>
+                    <h3>SDN & Intent-Based Networking</h3>
+                    <p>
+                        Centralized control planes, policy-driven traffic engineering, and
+                        application-aware routing using modern SDN and intent-based platforms.
+                    </p>
+                </div>
+
+                <!-- Network Automation & Orchestration -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="bi bi-gear-wide-connected"></i>
+                    </div>
+                    <h3>Network Automation & Orchestration</h3>
+                    <p>
+                        API-first automation using NSO, Ansible, and Terraform to automate
+                        provisioning, configuration, validation, and lifecycle management.
+                    </p>
+                </div>
+
+                <!-- API Integration & Programmability -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="bi bi-code-slash"></i>
+                    </div>
+                    <h3>API Integration & Programmability</h3>
+                    <p>
+                        Seamless integration through REST and gRPC APIs, enabling real-time
+                        orchestration, event-driven workflows, and developer-friendly network control.
+                    </p>
+                </div>
+
+                <!-- Secure Network Engineering -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="bi bi-shield-lock"></i>
+                    </div>
+                    <h3>Secure Network Engineering</h3>
+                    <p>
+                        Zero trust architecture, microsegmentation, secure SD-WAN, and continuous
+                        compliance embedded directly into automated network workflows.
+                    </p>
+                </div>
+
+                <!-- Data Center & ACI Solutions -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="bi bi-hdd-network"></i>
+                    </div>
+                    <h3>Data Center & ACI Solutions</h3>
+                    <p>
+                        Application-centric data center designs using Cisco ACI and comparable
+                        platforms with policy modeling and full lifecycle automation.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- WHY CHOOSE NETKODE -->
+    <section class="why-netkode reveal" id="why-netkode">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <!-- LEFT CONTENT -->
+                <div class="col-lg-5 reveal delay-1">
+                    <h6 class="why-subtitle">WHY CHOOSE US</h6>
+                    <h2 class="why-title">
+                        Network Engineering<br>
+                        You Can Trust
+                    </h2>
+                    <p class="why-desc">
+                        Architecture-first, automation-driven network integrations aligned
+                        directly to business intent, security, and scale.
+                    </p>
+
+                    <a href="#contact" class="btn btn-primary why-btn">
+                        Contact Us Today
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- RIGHT CONTENT -->
+                <div class="col-lg-7">
+                    <ul class="why-list">
+
+                        <li class="reveal delay-1">
+                            <span class="icon">
+                                <i class="bi bi-diagram-3"></i>
+                            </span>
+                            <div>
+                                <h5>Architecture-First Design</h5>
+                                <p>Intent-based topologies aligned to application flows and SLAs.</p>
+                            </div>
+                        </li>
+
+                        <li class="reveal delay-2">
+                            <span class="icon">
+                                <i class="bi bi-gear-wide-connected"></i>
+                            </span>
+                            <div>
+                                <h5>Automation-First Operations</h5>
+                                <p>API-driven playbooks using Ansible, NSO, and Terraform.</p>
+                            </div>
+                        </li>
+
+                        <li class="reveal delay-3">
+                            <span class="icon">
+                                <i class="bi bi-hdd-network"></i>
+                            </span>
+                            <div>
+                                <h5>Vendor-Agnostic Integration</h5>
+                                <p>Consistent operations across Cisco, Juniper, Arista, VMware, and cloud.</p>
+                            </div>
+                        </li>
+
+                        <li class="reveal delay-4">
+                            <span class="icon">
+                                <i class="bi bi-shield-lock"></i>
+                            </span>
+                            <div>
+                                <h5>Security by Design</h5>
+                                <p>Zero trust segmentation, microsegmentation, and continuous validation.</p>
+                            </div>
+                        </li>
+
+                        <li class="reveal delay-5">
+                            <span class="icon">
+                                <i class="bi bi-speedometer2"></i>
+                            </span>
+                            <div>
+                                <h5>Faster Time to Service</h5>
+                                <p>Provisioning reduced from weeks to hours through automation.</p>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- NETWORKING AUTOMATION TABS (LEFT → RIGHT) -->
+    <section class="automation-tabs reveal" id="automation">
+        <div class="container">
+            <h2 class="section-title">Networking Automation</h2>
+            <p class="section-subtitle">
+                Intelligent automation for scalable, secure, and resilient networks
+            </p>
+
+            <div class="row align-items-start">
+
+                <!-- LEFT SIDE TABS -->
+                <div class="col-md-4">
+                    <div class="nav flex-column nav-pills automation-nav" role="tablist">
+
+                        <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#auto-overview"
+                            type="button">
+                            <span>Overview</span>
+                        </button>
+
+                        <button class="nav-link" data-bs-toggle="pill" data-bs-target="#auto-usecases" type="button">
+                            <span>Use Cases</span>
+                        </button>
+
+                        <button class="nav-link" data-bs-toggle="pill" data-bs-target="#auto-benefits" type="button">
+                            <span>Benefits</span>
+                        </button>
+
+                        <button class="nav-link" data-bs-toggle="pill" data-bs-target="#auto-tools" type="button">
+                            <span>Technologies</span>
+                        </button>
+
+                    </div>
+                </div>
+
+                <!-- RIGHT SIDE CONTENT -->
+                <div class="col-md-8">
+                    <div class="tab-content automation-content">
+
+                        <div class="tab-pane fade show active" id="auto-overview">
+                            <h3>Automation Overview</h3>
+                            <p>
+                                Network automation enables organizations to configure, manage,
+                                and operate network infrastructure using software-driven workflows,
+                                reducing manual effort and increasing operational reliability.
+                            </p>
+                        </div>
+
+                        <div class="tab-pane fade" id="auto-usecases">
+                            <h3>Automation Use Cases</h3>
+                            <ul>
+                                <li>Zero-touch provisioning</li>
+                                <li>Automated configuration management</li>
+                                <li>Policy-based security enforcement</li>
+                                <li>Real-time monitoring and remediation</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-pane fade" id="auto-benefits">
+                            <h3>Business Benefits</h3>
+                            <ul>
+                                <li>Reduced operational costs</li>
+                                <li>Improved network consistency</li>
+                                <li>Faster deployment cycles</li>
+                                <li>Enhanced compliance and security</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-pane fade" id="auto-tools">
+                            <h3>Automation Technologies</h3>
+                            <p>
+                                SD-WAN, APIs, orchestration platforms, cloud-native automation tools,
+                                and intent-based networking solutions.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- SOLUTIONS SECTION -->
+    <section class="solutions reveal" id="solutions">
+        <div class="container">
+            <h2 class="section-title">Industry Solutions</h2>
+            <p class="section-subtitle">Tailored solutions for diverse business requirements</p>
+            <div class="solutions-grid">
+                <div class="solution-card">
+                    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600"
+                        alt="Enterprise Networking">
+                    <div class="solution-content">
+                        <h3>Enterprise Networking</h3>
+                        <p>Scalable network infrastructure for large organizations with complex requirements and
+                            multiple locations.</p>
+                    </div>
+                </div>
+                <div class="solution-card">
+                    <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=600" alt="Small Business">
+                    <div class="solution-content">
+                        <h3>Small Business Networks</h3>
+                        <p>Cost-effective networking solutions designed to help small businesses grow and compete
+                            effectively.</p>
+                    </div>
+                </div>
+                <div class="solution-card">
+                    <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=600" alt="Cloud Migration">
+                    <div class="solution-content">
+                        <h3>Cloud Migration</h3>
+                        <p>Smooth transition to cloud infrastructure with minimal disruption to your business
+                            operations.</p>
+                    </div>
+                </div>
+                <div class="solution-card">
+                    <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600" alt="Remote Access">
+                    <div class="solution-content">
+                        <h3>Secure Remote Access</h3>
+                        <p>VPN and secure remote connectivity solutions for distributed teams and remote workforce.</p>
+                    </div>
+                </div>
+                <div class="solution-card">
+                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600" alt="IoT Networking">
+                    <div class="solution-content">
+                        <h3>IoT Networking</h3>
+                        <p>Specialized network infrastructure for Internet of Things devices and smart technology
+                            integration.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TECHNOLOGIES SECTION -->
+    <section class="technologies reveal" id="technologies">
+        <div class="container">
+            <h2 class="section-title">Technologies We Master</h2>
+            <p class="section-subtitle">Industry-leading platforms and tools</p>
+            <div class="tech-grid">
+                <div class="tech-item">
+                    <h4>Cisco</h4>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-progress="95"></div>
+                    </div>
+                </div>
+                <div class="tech-item">
+                    <h4>AWS</h4>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-progress="90"></div>
+                    </div>
+                </div>
+                <div class="tech-item">
+                    <h4>Azure</h4>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-progress="88"></div>
+                    </div>
+                </div>
+                <div class="tech-item">
+                    <h4>Linux</h4>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-progress="92"></div>
+                    </div>
+                </div>
+                <div class="tech-item">
+                    <h4>Firewalls</h4>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-progress="94"></div>
+                    </div>
+                </div>
+                <div class="tech-item">
+                    <h4>VPN</h4>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-progress="96"></div>
+                    </div>
+                </div>
+                <div class="tech-item">
+                    <h4>SD-WAN</h4>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-progress="89"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATISTICS SECTION -->
+    <section class="stats reveal">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3 class="counter" data-target="500">0</h3>
+                    <p>Satisfied Clients</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="counter" data-target="1200">0</h3>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="stat-item">
+                    <h3><span class="counter" data-target="99">0</span>.9%</h3>
+                    <p>Network Uptime</p>
+                </div>
+                <div class="stat-item">
+                    <h3>24/7</h3>
+                    <p>Support Available</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="testimonials reveal" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <p class="section-subtitle">Trusted by businesses worldwide</p>
+            <div class="testimonial-slider">
+                <div class="testimonial-card active">
+                    <div class="testimonial-photo">
+                        <img src="https://i.pravatar.cc/150?img=12" alt="Client">
+                    </div>
+                    <p class="testimonial-text">"NetKode transformed our entire network infrastructure. Their expertise
+                        in cloud networking and security is unmatched. We've seen a 40% improvement in performance."</p>
+                    <p class="testimonial-author">Sarah Johnson</p>
+                    <p class="testimonial-role">CTO, TechCorp Solutions</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-photo">
+                        <img src="https://i.pravatar.cc/150?img=33" alt="Client">
+                    </div>
+                    <p class="testimonial-text">"Outstanding service and support. Their team designed and implemented
+                        our SD-WAN solution flawlessly. The 24/7 monitoring gives us complete peace of mind."</p>
+                    <p class="testimonial-author">Michael Chen</p>
+                    <p class="testimonial-role">IT Director, Global Finance Inc.</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-photo">
+                        <img src="https://i.pravatar.cc/150?img=45" alt="Client">
+                    </div>
+                    <p class="testimonial-text">"The migration to cloud infrastructure was seamless thanks to NetKode.
+                        Their expertise saved us time and money while improving our overall network performance."</p>
+                    <p class="testimonial-author">Emily Rodriguez</p>
+                    <p class="testimonial-role">CEO, InnovateTech</p>
+                </div>
+                <div class="slider-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- BLOG SECTION -->
+    <section class="blog reveal" id="blog">
+        <div class="container">
+            <h2 class="section-title">Latest Insights</h2>
+            <p class="section-subtitle">Stay updated with industry trends and best practices</p>
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600"
+                        alt="Future of Networking">
+                    <div class="blog-content">
+                        <h3>The Future of Enterprise Networking</h3>
+                        <p>Explore emerging trends in network architecture, including AI-driven automation, intent-based
+                            networking, and the evolution of SD-WAN technology.</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600" alt="Cloud Security">
+                    <div class="blog-content">
+                        <h3>Cloud Security Best Practices</h3>
+                        <p>Learn how to secure your cloud infrastructure with advanced encryption, access controls, and
+                            continuous monitoring strategies.</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1510511459019-5dda7724fd87?w=600" alt="Zero Trust">
+                    <div class="blog-content">
+                        <h3>Implementing Zero Trust Networks</h3>
+                        <p>Discover how Zero Trust architecture can transform your network security posture and protect
+                            against modern cyber threats.</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <!-- FAQ SECTION -->
+    <section class="faq reveal" id="faq">
+        <div class="container">
+            <h2 class="section-title">Networking Automation FAQs</h2>
+            <p class="section-subtitle">
+                Common questions about automated networking, security, and infrastructure management
+            </p>
+
+            <div class="faq-accordion">
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What is network automation?
+                        <i class="bi bi-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            Network automation uses software-driven processes to configure, manage,
+                            test, and operate network devices automatically. It reduces manual effort,
+                            minimizes errors, and improves network reliability.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How does automation improve network security?
+                        <i class="bi bi-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            Automation enforces consistent security policies, accelerates threat response,
+                            enables continuous compliance checks, and reduces human misconfiguration risks
+                            across the network.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Can network automation work with existing infrastructure?
+                        <i class="bi bi-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            Yes. Modern automation platforms are designed to integrate with existing
+                            hardware and software, enabling gradual adoption without disrupting
+                            business operations.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Is network automation suitable for small and mid-sized businesses?
+                        <i class="bi bi-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            Absolutely. Automation helps SMBs reduce operational costs, improve uptime,
+                            and manage networks efficiently with limited IT resources.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What technologies are commonly used in network automation?
+                        <i class="bi bi-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            Common technologies include SD-WAN, APIs, Python-based automation,
+                            configuration management tools, and cloud-native orchestration platforms.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- CONTACT SECTION -->
+    <section class="contact reveal" id="contact">
+
+        <!-- MAP BACKGROUND -->
+        <div class="contact-map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.1802561993027!2d78.39041008271361!3d17.498906656818832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93e1dee6987f%3A0x5b8efdd5dd2b5060!2sEduPoly!5e0!3m2!1sen!2sin!4v1767319394820!5m2!1sen!2sin"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
+        </div>
+
+        <!-- DARK OVERLAY -->
+        <div class="contact-overlay"></div>
+
+        <!-- CONTENT -->
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Let's discuss your networking needs</p>
+
+
+            <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+
+                <input type="hidden" name="access_key" value="932c8975-140c-4c30-94a0-28b4188a4f07">
+                <input type="hidden" name="_subject" value="New NetKode Website Enquiry">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="redirect" value="https://web3forms.com/success">
+
+
+                <div class="form-group">
+                    <label>Full Name <span class="required">*</span></label>
+                    <input type="text" id="name" name="name">
+                    <small class="error-text"></small>
+                </div>
+
+                <div class="form-group">
+                    <label>Email Address <span class="required">*</span></label>
+                    <input type="email" id="email" name="email">
+                    <small class="error-text"></small>
+                </div>
+
+                <div class="form-group">
+                    <label>Phone Number <span class="required">*</span></label>
+                    <input type="tel" id="phone" name="phone">
+                    <small class="error-text"></small>
+                </div>
+
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea id="message" name="message"></textarea>
+                </div>
+
+                <p id="formStatus"></p>
+
+
+
+                <button type="submit" class="btn btn-primary">Send Message</button>
+
+                <p id="formStatus"></p>
+
+            </form>
+
+
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>NetKode</h3>
+                    <p>Leading provider of enterprise networking solutions. Empowering businesses with secure, scalable,
+                        and innovative network infrastructure.</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+
+                        <a href="#" aria-label="Twitter">
+                            <i class="bi bi-twitter-x"></i>
+                        </a>
+
+                        <a href="#" aria-label="LinkedIn">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+
+                        <a href="#" aria-label="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="#about">About Us</a>
+                    <a href="#services">Services</a>
+                    <a href="#solutions">Solutions</a>
+                    <a href="#blog">Blog</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <a href="#services">Network Design</a>
+                    <a href="#services">Cloud Networking</a>
+                    <a href="#services">Cybersecurity</a>
+                    <a href="#services">IT Infrastructure</a>
+                    <a href="#services">Network Monitoring</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+
+                    <p>
+                        <i class="bi bi-envelope-fill"></i>
+                        <a href="mailto:contact@netkode.in">contact@netkode.in</a>
+                    </p>
+
+                    <p>
+                        <i class="bi bi-telephone-fill"></i>
+                        <a href="tel:+15551234567">+1 (555) 123-4567</a>
+                    </p>
+
+                    <p>
+                        <i class="bi bi-geo-alt-fill"></i>
+                        123 Tech Boulevard<br>
+                        Silicon Valley, CA 94025
+                    </p>
+
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>
+                    &copy; 2025 NetKode. All rights reserved.
+                    |
+                    <a href="#privacy-policy">Privacy Policy</a>
+                    |
+                    <a href="#terms-of-service">Terms of Service</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

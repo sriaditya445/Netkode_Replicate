@@ -1,0 +1,143 @@
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f6f7fb;
+      color: #333;
+    }
+
+    /* ================= HERO ================= */
+    .banner-section {
+      background: linear-gradient(180deg, rgba(102, 126, 234, .92), rgba(0, 0, 0, .85)),
+        url(https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1600) center/cover;
+      padding: 180px 0 130px;
+      text-align: center;
+      color: #fff;
+    }
+
+    .banner-section h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    /* ================= LAYOUT ================= */
+    .content-wrapper {
+      padding: 70px 0;
+    }
+
+    .sticky-sidebar {
+      position: sticky;
+      top: 110px;
+    }
+
+    /* ================= TOC ================= */
+    .toc-card {
+      background: #fff;
+      padding: 25px;
+      border-radius: 14px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, .08);
+    }
+
+    .toc-card a {
+      display: block;
+      padding: 12px 14px;
+      margin-bottom: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 8px;
+      color: #555;
+      transition: all .3s ease;
+    }
+
+    .toc-card a.active,
+    .toc-card a:hover {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: #fff;
+    }
+
+    /* ================= SERVICE SECTION ================= */
+    .service-section {
+      background: #fff;
+      padding: 45px;
+      border-radius: 16px;
+      margin-bottom: 45px;
+      box-shadow: 0 15px 45px rgba(0, 0, 0, .08);
+      scroll-margin-top: 120px;
+    }
+
+    .service-section h2 {
+      color: #667eea;
+      font-weight: 700;
+    }
+
+    .section-subtitle {
+      margin-top: 25px;
+      font-weight: 600;
+      color: #444;
+    }
+
+    .service-image {
+      width: 100%;
+      border-radius: 14px;
+      margin: 25px 0;
+    }
+
+    .feature-list,
+    .benefits {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 15px;
+    }
+
+    .feature-list li {
+      padding: 10px 0;
+    }
+
+    .feature-list i {
+      color: #667eea;
+      margin-right: 10px;
+    }
+
+    .benefits {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+
+    .benefits li {
+      background: #f2f4f8;
+      padding: 12px 15px;
+      border-radius: 8px;
+      font-weight: 500;
+    }
+
+    .info-box {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: #fff;
+      padding: 28px;
+      border-radius: 14px;
+      margin-top: 30px;
+    }
+
+    /* ================= RESPONSIVE ================= */
+    @media (max-width: 768px) {
+      .banner-section {
+        padding: 120px 0 90px;
+      }
+
+      .banner-section h1 {
+        font-size: 2rem;
+      }
+
+      .sticky-sidebar {
+        position: relative;
+        top: 0;
+        margin-bottom: 30px;
+      }
+
+      .service-section {
+        padding: 30px;
+      }
+
+      .benefits {
+        grid-template-columns: 1fr;
+      }
+    }

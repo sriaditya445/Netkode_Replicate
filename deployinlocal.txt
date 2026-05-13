@@ -1,0 +1,46 @@
+/var/www/html
+
+
+
+install php/apachee
+
+sudo apt update
+sudo apt install apache2 php -y
+
+
+Start Apache:
+
+sudo systemctl start apache2
+
+
+
+
+http://localhost
+
+
+step-2
+
+cd /var/www/html
+sudo mkdir contact-form
+sudo chmod -R 777 contact-form
+cd contact-form
+
+
+step-3
+
+wget https://github.com/PHPMailer/PHPMailer/archive/refs/heads/master.zip
+unzip master.zip
+mv PHPMailer-master PHPMailer
+rm master.zip
+
+
+create the html file
+
+and cretae send.php
+
+go to mail and go to security settings and searcch app password and add the key 
+
+fzho onos iavw bgkv
+
+
+http://127.0.0.1:5500/services-strategy.html
