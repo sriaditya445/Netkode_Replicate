@@ -1171,4 +1171,120 @@ body.inner-page .glass-header:not(.scrolled) .menu-toggle:not(.active) span {
     .has-dropdown.active .dropdown {
         display: block;
     }
+
+
+
+
+
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .hero,
+    .hero-grid,
+    .hero-bg-glow {
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    section,
+    .container,
+    .row,
+    [class*="col-"] {
+        max-width: 100%;
+    }
+
+    /* Fix absolute/fixed elements overflow */
+    .hero-grid,
+    .hero-bg-glow,
+    .blob-bg {
+        left: 0;
+        right: 0;
+    }
+
+    /* Mobile Fix */
+    @media (max-width: 768px) {
+
+        .hero-title {
+            font-size: 2.8rem;
+            word-break: break-word;
+        }
+
+        .hero-grid {
+            width: 100%;
+            overflow: hidden;
+        }
+
+
+
+
+    }
+}
+
+
+
+/* Responsive WhatsApp Floating Button */
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 20px rgba(37, 211, 102, 0.3);
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+
+    .whatsapp-float {
+        width: 52px;
+        height: 52px;
+        font-size: 1.6rem;
+        right: 18px;
+        bottom: 18px;
+    }
+
+    #scrollIndicator {
+        right: 82px;
+        bottom: 18px;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+
+    .whatsapp-float {
+        width: 46px;
+        height: 46px;
+        font-size: 1.4rem;
+        right: 12px;
+        bottom: 14px;
+    }
+
+    #scrollIndicator {
+        width: 44px;
+        height: 44px;
+        right: 66px;
+        bottom: 14px;
+    }
+
+    #scrollTopBtn {
+        width: 34px;
+        height: 34px;
+        font-size: 1rem;
+    }
 }
