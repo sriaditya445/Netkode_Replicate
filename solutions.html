@@ -15,361 +15,110 @@
     <link rel="stylesheet" href="innrstyle.css">
 </head>
 
-<body>
+<body class="inner-page">
 
-    <!-- ================= HEADER (FROM SECOND FILE) ================= -->
-    <header id="header">
-        <nav class="container">
-            <a href="index.html">
-                <div class="logo">Net<span>Kode</span></div>
-            </a>
-
-            <ul class="nav-links" id="navLinks">
-                <li><a href="index.html#home">Home</a></li>
-                <li><a href="index.html#about">About</a></li>
-                <!-- <li><a href="#services">Services</a></li>
-                <li><a href="#solutions">Solutions</a></li>
-                <li><a href="#technologies">Technologies</a></li> -->
-
-
-                <!-- SERVICES DROPDOWN -->
-                <li class="has-dropdown">
-                    <a href="services-strategy.html">
-                        Services <i class="bi bi-chevron-down"></i>
-                    </a>
-                    <ul class="dropdown">
-                        <li><a href="services-strategy.html#consulting">Consulting & Assessment</a></li>
-                        <li><a href="services-strategy.html#iac">IaC Development & CI/CD</a></li>
-                        <li><a href="services-strategy.html#nso">Cisco NSO Service Packs</a></li>
-                        <li><a href="services-strategy.html#api">API Automation Frameworks</a></li>
-                        <li><a href="services-strategy.html#terraform">Terraform Templates</a></li>
-                        <li><a href="services-strategy.html#managed">Managed Automation</a></li>
-                    </ul>
-                </li>
-
-                <!-- SOLUTIONS DROPDOWN -->
-                <li class="has-dropdown">
-                    <a href="solutions.html">
-                        Solutions <i class="bi bi-chevron-down"></i>
-                    </a>
-                    <ul class="dropdown">
-                        <li><a href="solutions.html#enterprise">Enterprise Networking</a></li>
-                        <li><a href="solutions.html#smb">Small Business Networks</a></li>
-                        <li><a href="solutions.html#cloud">Cloud Migration</a></li>
-                        <li><a href="solutions.html#remote">Secure Remote Access</a></li>
-                        <li><a href="solutions.html#iot">IoT Networking</a></li>
-                    </ul>
-                </li>
-
-                <!-- TECHNOLOGIES DROPDOWN -->
-                <li class="has-dropdown">
-                    <a href="technologies.html">
-                        Technologies <i class="bi bi-chevron-down"></i>
-                    </a>
-                    <ul class="dropdown">
-                        <li><a href="technologies.html#cisco">Cisco</a></li>
-                        <li><a href="technologies.html#aws">AWS</a></li>
-                        <li><a href="technologies.html#azure">Azure</a></li>
-                        <li><a href="technologies.html#linux">Linux</a></li>
-                        <li><a href="technologies.html#sdwan">SD-WAN</a></li>
-                    </ul>
-                </li>
-                <!-- <li><a href="index.html#testimonials">Testimonials</a></li> -->
-                <li><a href="index.html#blog">Blog</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
-
-
-
-
-
-
-
-
-            </ul>
-            <div class="menu-toggle" id="menuToggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
-    </header>
+    <!-- DYNAMIC HEADER PLACEHOLDER -->
+    <div id="header-placeholder"></div>
 
     <!-- ================= HERO ================= -->
     <section class="banner-section">
         <div class="container">
-            <h1>Our Network Solutions</h1>
-            <p class="mt-3">End-to-end solutions for modern enterprise connectivity</p>
+            <h1 class="reveal-up">Our Network Solutions</h1>
+            <p class="mt-3 reveal-up delay-1">End-to-end solutions for modern enterprise connectivity</p>
         </div>
     </section>
 
     <!-- ================= CONTENT ================= -->
-    <section class="content-wrapper">
-        <div class="container">
-            <div class="row">
-
-                <!-- TOC -->
-                <div class="col-lg-3">
-                    <div class="sticky-sidebar">
-                        <div class="toc-card">
-                            <a href="#enterprise" class="active">Enterprise Networking</a>
-                            <a href="#smb">SMB Networks</a>
-                            <a href="#cloud">Cloud Migration</a>
-                            <a href="#remote">Secure Remote Access</a>
-                            <a href="#iot">IoT Networking</a>
-                        </div>
+    <section class="services section-padding relative">
+        <div class="blob-bg"></div>
+        <div class="container relative z-10">
+            <div class="row g-4">
+                
+                <!-- ENTERPRISE -->
+                <div class="col-lg-6 reveal-up">
+                    <div class="service-card glass-card tilt-card h-100">
+                        <div class="service-icon"><i class="bi bi-building"></i></div>
+                        <h3>Enterprise Networking</h3>
+                        <p class="mb-4">Scalable, resilient architectures driving digital transformation. We design enterprise-grade environments for high availability and performance-critical workloads.</p>
+                        <ul class="text-muted text-sm" style="padding-left:1.5rem; list-style-type: disc;">
+                            <li>Core & distribution network design</li>
+                            <li>High availability & redundancy planning</li>
+                            <li>Network segmentation & access control</li>
+                            <li>Real-time monitoring & analytics</li>
+                        </ul>
                     </div>
                 </div>
 
-                <!-- CONTENT -->
-                <div class="col-lg-9">
-
-                    <!-- ENTERPRISE -->
-                    <div id="enterprise" class="service-section">
-                        <h2>Enterprise Networking Solutions</h2>
-                        <img class="service-image"
-                            src="https://images.unsplash.com/photo-1580894732444-8ecded7900cd?w=1400">
-
-                        <p class="lead">
-                            Scalable, resilient architectures driving digital transformation.
-                        </p>
-
-                        <p>
-                            In today’s digital enterprise, the network forms the foundation of every application,
-                            workflow,
-                            and user experience. We design enterprise-grade networking environments that support high
-                            availability,
-                            large-scale connectivity, and performance-critical workloads across campuses, data centers,
-                            and cloud platforms.
-                        </p>
-
-                        <p>
-                            Our solutions incorporate modern architectures including SD-WAN, Wi-Fi 6/7, redundant core
-                            routing,
-                            and centralized network visibility to deliver reliable connectivity for thousands of users
-                            and devices.
-                            We focus on building infrastructures that grow with your business while maintaining
-                            operational simplicity.
-                        </p>
-
-                        <p>
-                            From initial architecture planning to deployment and optimization, we ensure your enterprise
-                            network
-                            remains secure, scalable, and future-ready.
-                        </p>
-
-                        <h3 class="section-subtitle">Key Capabilities</h3>
-                        <ul class="feature-list">
-                            <li><i class="bi bi-check-circle-fill"></i> Core & distribution network design</li>
-                            <li><i class="bi bi-check-circle-fill"></i> High availability & redundancy planning</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Network segmentation & access control</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Real-time monitoring & analytics</li>
-                        </ul>
-
-                        <ul class="benefits">
-                            <li>99.99% uptime architectures</li>
-                            <li>Optimized application performance</li>
-                            <li>Future-ready scalability</li>
-                            <li>Compliance-ready design</li>
-                        </ul>
-                    </div>
-
-
-                    <!-- SMB -->
-                    <div id="smb" class="service-section">
-                        <h2>Small & Medium Business Networks</h2>
-                        <img class="service-image"
-                            src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1400">
-
-                        <p class="lead">
-                            Enterprise reliability, scaled for growing businesses.
-                        </p>
-
-                        <p>
-                            Small and medium businesses face the same security threats and performance expectations as
-                            large enterprises,
-                            often with limited IT staff and budgets. We deliver cloud-managed, secure networking
-                            solutions that simplify
-                            operations while providing enterprise-grade protection.
-                        </p>
-
-                        <p>
-                            Our SMB architectures prioritize ease of deployment, centralized management, and built-in
-                            redundancy so your
-                            business stays connected even during ISP outages or hardware failures.
-                        </p>
-
-                        <p>
-                            From single-office setups to multi-branch environments, we design networks that grow with
-                            your organization.
-                        </p>
-
-                        <ul class="feature-list">
-                            <li><i class="bi bi-check-circle-fill"></i> Cloud-managed LAN & Wi-Fi</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Secure firewalls & content filtering</li>
-                            <li><i class="bi bi-check-circle-fill"></i> ISP failover & LTE backup</li>
-                        </ul>
-
-                        <ul class="benefits">
+                <!-- SMB -->
+                <div class="col-lg-6 reveal-up delay-1">
+                    <div class="service-card glass-card tilt-card h-100">
+                        <div class="service-icon"><i class="bi bi-shop"></i></div>
+                        <h3>Small & Medium Business</h3>
+                        <p class="mb-4">Enterprise reliability, scaled for growing businesses. We deliver cloud-managed, secure networking solutions that simplify operations while providing enterprise-grade protection.</p>
+                        <ul class="text-muted text-sm" style="padding-left:1.5rem; list-style-type: disc;">
+                            <li>Cloud-managed LAN & Wi-Fi</li>
+                            <li>Secure firewalls & content filtering</li>
+                            <li>ISP failover & LTE backup</li>
                             <li>Lower total cost of ownership</li>
-                            <li>Rapid office deployment</li>
-                            <li>Minimal IT overhead</li>
                         </ul>
                     </div>
-
-
-                    <!-- CLOUD -->
-                    <div id="cloud" class="service-section">
-                        <h2>Cloud Connectivity & Migration</h2>
-                        <img class="service-image"
-                            src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1400">
-
-                        <p class="lead">
-                            Seamless integration between on-premise and cloud.
-                        </p>
-
-                        <p>
-                            We design secure hybrid and multi-cloud connectivity architectures for AWS, Azure, and
-                            Google Cloud,
-                            allowing organizations to move workloads with confidence.
-                        </p>
-
-                        <p>
-                            Our cloud networking solutions provide encrypted tunnels, direct cloud interconnects, and
-                            optimized routing
-                            to ensure low latency, high availability, and predictable performance.
-                        </p>
-
-                        <p>
-                            Whether migrating applications or building cloud-native environments, we ensure your
-                            connectivity layer
-                            remains resilient, secure, and cost-efficient.
-                        </p>
-
-                        <ul class="feature-list">
-                            <li><i class="bi bi-check-circle-fill"></i> Direct Connect & ExpressRoute</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Site-to-site & client VPNs</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Cloud firewall & segmentation</li>
-                        </ul>
-
-                        <ul class="benefits">
-                            <li>High-performance cloud access</li>
-                            <li>Improved security posture</li>
-                            <li>Cost-optimized routing</li>
-                        </ul>
-                    </div>
-
-
-                    <!-- REMOTE -->
-                    <div id="remote" class="service-section">
-                        <h2>Secure Remote Access (ZTNA)</h2>
-                        <img class="service-image"
-                            src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=1400&q=80">
-
-                        <p class="lead">
-                            Secure work-from-anywhere without implicit trust.
-                        </p>
-
-                        <p>
-                            Traditional VPNs expose entire networks once users are connected. We implement Zero Trust
-                            Network Access (ZTNA)
-                            architectures that authenticate every user, device, and session before granting
-                            application-level access.
-                        </p>
-
-                        <p>
-                            By enforcing identity-based policies and continuous verification, organizations gain
-                            stronger protection
-                            against lateral movement, credential theft, and unauthorized access.
-                        </p>
-
-                        <p>
-                            ZTNA enables secure remote work while improving user experience and reducing operational
-                            complexity.
-                        </p>
-
-                        <ul class="feature-list">
-                            <li><i class="bi bi-check-circle-fill"></i> Identity-based access</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Micro-segmentation</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Continuous authentication</li>
-                        </ul>
-
-                        <ul class="benefits">
-                            <li>Reduced attack surface</li>
-                            <li>Improved remote productivity</li>
-                            <li>Detailed access auditing</li>
-                        </ul>
-                    </div>
-
-
-                    <!-- IOT -->
-                    <div id="iot" class="service-section">
-                        <h2>IoT Networking & Segmentation</h2>
-                        <img class="service-image"
-                            src="https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?w=1400">
-
-                        <p class="lead">
-                            Securely connecting thousands of unmanaged devices.
-                        </p>
-
-                        <p>
-                            IoT devices introduce visibility and security challenges across enterprise environments. We
-                            design segmented
-                            IoT networks that isolate devices while maintaining operational connectivity.
-                        </p>
-
-                        <p>
-                            Using NAC, automated profiling, and dynamic policy enforcement, we ensure every device is
-                            identified,
-                            classified, and placed into the correct security zone.
-                        </p>
-
-                        <p>
-                            This approach minimizes risk while enabling organizations to scale IoT deployments safely.
-                        </p>
-
-                        <ul class="feature-list">
-                            <li><i class="bi bi-check-circle-fill"></i> Automated device profiling</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Dynamic VLAN / VRF segmentation</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Anomaly detection & alerts</li>
-                        </ul>
-
-                        <ul class="benefits">
-                            <li>Complete asset visibility</li>
-                            <li>Risk isolation</li>
-                            <li>Operational efficiency</li>
-                        </ul>
-                    </div>
-
-
                 </div>
+
+                <!-- CLOUD -->
+                <div class="col-lg-4 reveal-up">
+                    <div class="service-card glass-card tilt-card h-100">
+                        <div class="service-icon"><i class="bi bi-cloud-arrow-up"></i></div>
+                        <h3>Cloud Connectivity</h3>
+                        <p class="mb-4">Secure, optimized paths to multi-cloud environments. We architect seamless integrations for AWS, Azure, and Google Cloud workloads.</p>
+                        <ul class="text-muted text-sm" style="padding-left:1.5rem; list-style-type: disc;">
+                            <li>Direct Connect & ExpressRoute</li>
+                            <li>Site-to-site & client VPNs</li>
+                            <li>Cloud firewall & segmentation</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- REMOTE -->
+                <div class="col-lg-4 reveal-up delay-1">
+                    <div class="service-card glass-card tilt-card h-100">
+                        <div class="service-icon"><i class="bi bi-shield-lock"></i></div>
+                        <h3>Secure Remote Access</h3>
+                        <p class="mb-4">Zero Trust Network Access (ZTNA) architectures for the modern workforce. Secure connectivity without implicit trust.</p>
+                        <ul class="text-muted text-sm" style="padding-left:1.5rem; list-style-type: disc;">
+                            <li>Identity-based access & MFA</li>
+                            <li>Micro-segmentation</li>
+                            <li>Continuous authentication</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- IOT -->
+                <div class="col-lg-4 reveal-up delay-2">
+                    <div class="service-card glass-card tilt-card h-100">
+                        <div class="service-icon"><i class="bi bi-cpu"></i></div>
+                        <h3>IoT & OT Networking</h3>
+                        <p class="mb-4">Secure segmentation for operational environments. We isolate and protect critical devices from enterprise IT networks.</p>
+                        <ul class="text-muted text-sm" style="padding-left:1.5rem; list-style-type: disc;">
+                            <li>Automated device profiling</li>
+                            <li>Dynamic VLAN / VRF segmentation</li>
+                            <li>Anomaly detection & alerts</li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
-
-    <!-- ================= SCROLL SPY ================= -->
-    <script>
-        const links = document.querySelectorAll('.toc-card a');
-        const sections = document.querySelectorAll('.service-section');
-
-        window.addEventListener('scroll', () => {
-            let current = '';
-            sections.forEach(sec => {
-                if (window.scrollY >= sec.offsetTop - 150) {
-                    current = sec.id;
-                }
-            });
-
-            links.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === '#' + current) {
-                    link.classList.add('active');
-                }
-            });
-        }); 
-    </script>
-    <script src="script.js"></script>
+    <!-- GSAP & Lenis -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 
+    <!-- DYNAMIC FOOTER PLACEHOLDER -->
+    <div id="footer-placeholder"></div>
+    <script src="components.js"></script>
 </body>
 
 </html>
