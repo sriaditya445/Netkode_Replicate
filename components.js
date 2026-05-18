@@ -36,6 +36,7 @@ const headerHTML = `
                         <li><a href="services-strategy.html#api">API Automation Frameworks</a></li>
                         <li><a href="services-strategy.html#terraform">Terraform Templates</a></li>
                         <li><a href="services-strategy.html#managed">Managed Automation</a></li>
+                        <li><a href="services-strategy.html#network">Network Auditing</a></li>
                     </ul>
                 </li>
 

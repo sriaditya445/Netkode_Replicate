@@ -32,13 +32,14 @@
     <div class="blob-bg"></div>
     <div class="container relative z-10">
       <div class="row g-4">
-        
+
         <!-- CONSULTING -->
         <div class="col-lg-6 reveal-up">
           <div class="service-card glass-card tilt-card h-100">
             <div class="service-icon"><i class="bi bi-search"></i></div>
-            <h3>Consulting & Assessment</h3>
-            <p class="mb-4">We evaluate automation readiness, infrastructure maturity, and operational models to design practical, actionable Infrastructure-as-Code and automation roadmaps.</p>
+            <h3 id="consulting">Consulting & Assessment</h3>
+            <p class="mb-4">We evaluate automation readiness, infrastructure maturity, and operational models to design
+              practical, actionable Infrastructure-as-Code and automation roadmaps.</p>
             <ul class="text-muted text-sm" style="padding-left:1.5rem; list-style-type: disc;">
               <li>Automation readiness assessment</li>
               <li>IaC and platform strategy</li>
@@ -48,12 +49,15 @@
           </div>
         </div>
 
+
+
         <!-- IAC -->
         <div class="col-lg-6 reveal-up delay-1">
           <div class="service-card glass-card tilt-card h-100">
             <div class="service-icon"><i class="bi bi-diagram-3"></i></div>
-            <h3>IaC Development & CI/CD</h3>
-            <p class="mb-4">We design and implement Infrastructure-as-Code pipelines using Terraform and Ansible to automate provisioning across data centers, cloud platforms, and hybrid environments.</p>
+            <h3 id="iac">IaC Development & CI/CD</h3>
+            <p class="mb-4">We design and implement Infrastructure-as-Code pipelines using Terraform and Ansible to
+              automate provisioning across data centers, cloud platforms, and hybrid environments.</p>
             <ul class="text-muted text-sm" style="padding-left:1.5rem; list-style-type: disc;">
               <li>Reusable IaC modules</li>
               <li>Git-based change control</li>
@@ -67,8 +71,9 @@
         <div class="col-lg-4 reveal-up">
           <div class="service-card glass-card tilt-card h-100">
             <div class="service-icon"><i class="bi bi-hdd-network"></i></div>
-            <h3>Cisco NSO Service Packs</h3>
-            <p class="mb-4">We build custom Cisco NSO service packs using YANG models to standardize L2/L3, VPN, ACL, and BGP services across multi-vendor environments.</p>
+            <h3 id="nso">Cisco NSO Service Packs</h3>
+            <p class="mb-4">We build custom Cisco NSO service packs using YANG models to standardize L2/L3, VPN, ACL,
+              and BGP services across multi-vendor environments.</p>
             <ul class="text-muted text-sm" style="padding-left:1.5rem; list-style-type: disc;">
               <li>Custom YANG models</li>
               <li>Service automation & intent mapping</li>
@@ -81,8 +86,9 @@
         <div class="col-lg-4 reveal-up delay-1">
           <div class="service-card glass-card tilt-card h-100">
             <div class="service-icon"><i class="bi bi-code-slash"></i></div>
-            <h3>API Automation</h3>
-            <p class="mb-4">We design robust API automation frameworks using REST and gRPC to connect applications, platforms, and network systems.</p>
+            <h3 id="api">API Automation</h3>
+            <p class="mb-4">We design robust API automation frameworks using REST and gRPC to connect applications,
+              platforms, and network systems.</p>
             <ul class="text-muted text-sm" style="padding-left:1.5rem; list-style-type: disc;">
               <li>Developer APIs & integrations</li>
               <li>Event-driven workflows</li>
@@ -95,8 +101,9 @@
         <div class="col-lg-4 reveal-up delay-2">
           <div class="service-card glass-card tilt-card h-100">
             <div class="service-icon"><i class="bi bi-box"></i></div>
-            <h3>Terraform Templates</h3>
-            <p class="mb-4">Our Terraform templates provide modular, reusable building blocks for routers, switches, firewalls, and network controllers.</p>
+            <h3 id="terraform">Terraform Templates</h3>
+            <p class="mb-4">Our Terraform templates provide modular, reusable building blocks for routers, switches,
+              firewalls, and network controllers.</p>
             <ul class="text-muted text-sm" style="padding-left:1.5rem; list-style-type: disc;">
               <li>Standardized deployments</li>
               <li>Reusable modules & fast onboarding</li>
@@ -111,8 +118,10 @@
             <div class="row align-items-center">
               <div class="col-lg-8">
                 <div class="service-icon"><i class="bi bi-headset"></i></div>
-                <h3>Managed Automation</h3>
-                <p class="mb-4">We operate and continuously enhance your automation platforms under defined SLAs and operational best practices. Our managed services include monitoring, performance optimization, security updates, and platform maintenance to keep systems running reliably.</p>
+                <h3 id="managed">Managed Automation</h3>
+                <p class="mb-4">We operate and continuously enhance your automation platforms under defined SLAs and
+                  operational best practices. Our managed services include monitoring, performance optimization,
+                  security updates, and platform maintenance to keep systems running reliably.</p>
                 <div class="d-flex flex-wrap gap-3">
                   <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-2">SLA-backed operations</span>
                   <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-2">Continuous improvement</span>
@@ -120,8 +129,51 @@
                 </div>
               </div>
               <div class="col-lg-4 mt-4 mt-lg-0 text-center">
-                <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800" class="img-fluid rounded-4 shadow" alt="Managed Services">
+                <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800"
+                  class="img-fluid rounded-4 shadow" alt="Managed Services">
               </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- NETWORK AUDITING -->
+        <div class="col-lg-12 reveal-up">
+          <div class="service-card glass-card tilt-card">
+            <div class="row align-items-center">
+
+              <div class="col-lg-8">
+                <div class="service-icon">
+                  <i class="bi bi-shield-check"></i>
+                </div>
+
+                <h3 id="network">Network Auditing & Security</h3>
+
+                <p class="mb-4">
+                  We perform comprehensive network audits to evaluate security posture,
+                  configuration compliance, operational stability, and infrastructure
+                  health across enterprise and service provider environments.
+                </p>
+
+                <div class="d-flex flex-wrap gap-3">
+                  <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-2">
+                    Security Compliance
+                  </span>
+
+                  <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-2">
+                    Configuration Auditing
+                  </span>
+
+                  <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-2">
+                    Risk Assessment
+                  </span>
+                </div>
+              </div>
+
+              <div class="col-lg-4 mt-4 mt-lg-0 text-center">
+                <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800"
+                  class="img-fluid rounded-4 shadow" alt="Network Auditing & Security">
+              </div>
+
             </div>
           </div>
         </div>

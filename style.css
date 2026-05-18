@@ -1285,6 +1285,10 @@ body.inner-page .glass-header:not(.scrolled) .menu-toggle:not(.active) span {
     .row.mb-5.pb-4.border-bottom-glass {
         margin: 0 !important;
     }
+
+    .col-lg-6.reveal-left {
+        margin: 0px 0 6% !important;
+    }
 }
 
 /* Small Mobile */
