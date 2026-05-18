@@ -688,7 +688,7 @@ body.inner-page .glass-header:not(.scrolled) .menu-toggle:not(.active) span {
     width: 50%;
     height: 100%;
     background: radial-gradient(circle, rgba(236, 72, 153, 0.1) 0%, transparent 60%);
-    z-index: 0;
+    z-index: -1;
 }
 
 .feature-card {
@@ -1276,6 +1276,14 @@ body.inner-page .glass-header:not(.scrolled) .menu-toggle:not(.active) span {
 
     .section-heading .section-title {
         margin-bottom: 0;
+    }
+
+    .section-padding {
+        padding: 20px 0;
+    }
+
+    .row.mb-5.pb-4.border-bottom-glass {
+        margin: 0 !important;
     }
 }
 
