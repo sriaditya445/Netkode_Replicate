@@ -1196,6 +1196,7 @@ body.inner-page .glass-header:not(.scrolled) .menu-toggle:not(.active) span {
     .row,
     [class*="col-"] {
         max-width: 100%;
+        margin: 10px auto;
     }
 
     /* Fix absolute/fixed elements overflow */
@@ -1204,6 +1205,7 @@ body.inner-page .glass-header:not(.scrolled) .menu-toggle:not(.active) span {
     .blob-bg {
         left: 0;
         right: 0;
+        width: 100%;
     }
 
     /* Mobile Fix */
@@ -1262,6 +1264,19 @@ body.inner-page .glass-header:not(.scrolled) .menu-toggle:not(.active) span {
         right: 82px;
         bottom: 18px;
     }
+
+    .section-heading {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .section-heading .section-badge {
+        display: inline-block;
+    }
+
+    .section-heading .section-title {
+        margin-bottom: 0;
+    }
 }
 
 /* Small Mobile */
@@ -1278,13 +1293,15 @@ body.inner-page .glass-header:not(.scrolled) .menu-toggle:not(.active) span {
     #scrollIndicator {
         width: 44px;
         height: 44px;
-        right: 66px;
-        bottom: 14px;
+        right: 15px;
+        bottom: 70px;
     }
 
     #scrollTopBtn {
-        width: 34px;
-        height: 34px;
+        width: 40px;
+        height: 40px;
         font-size: 1rem;
+        top: 60%;
+        left: 60%;
     }
 }
