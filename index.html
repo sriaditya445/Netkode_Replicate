@@ -121,11 +121,17 @@
 </head>
 
 <body>
+    <!-- Noise Texture Overlay -->
+    <div class="noise-overlay"></div>
+
     <!-- DYNAMIC HEADER PLACEHOLDER -->
     <div id="header-placeholder"></div>
 
     <!-- HERO SECTION -->
     <section class="hero" id="home">
+        <!-- WebGL Canvas for 3D Particles -->
+        <canvas id="webgl-canvas"></canvas>
+
         <!-- Animated Background Elements -->
         <div class="hero-bg-glow"></div>
         <div class="hero-grid"></div>
@@ -575,12 +581,14 @@
     <!-- CDNs -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- Custom Scripts -->
     <script src="components.js"></script>
+    <script src="three-animation.js"></script>
     <script src="script.js"></script>
 </body>
 
