@@ -15,11 +15,11 @@ document.addEventListener('DOMContentLoaded', () => {
         infinite: false,
     });
 
-    function raf(time) {
-        lenis.raf(time);
-        requestAnimationFrame(raf);
-    }
-    requestAnimationFrame(raf);
+    // function raf(time) {
+    //     lenis.raf(time);
+    //     requestAnimationFrame(raf);
+    // }
+    // requestAnimationFrame(raf);
 
     // Sync GSAP with Lenis
     gsap.ticker.add((time) => {
@@ -588,7 +588,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-
+    window.addEventListener("load", () => {
+        ScrollTrigger.refresh();
+    });
 
 
 
