@@ -1346,3 +1346,21 @@ body.inner-page .glass-header:not(.scrolled) .menu-toggle:not(.active) span {
         left: 60%;
     }
 }
+
+
+html.lenis,
+html.lenis body {
+    height: auto;
+}
+
+.lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+    overflow: hidden;
+}
